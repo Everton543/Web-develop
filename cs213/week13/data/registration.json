@@ -1,0 +1,40 @@
+{ "performance" :
+  [
+    { "type" : "duet",
+      "students" :
+      [
+         { "first" : "John",
+           "last"  : "Doe",
+           "id"    : "123",
+           "skill" : "begginer",
+           "instrument" : "piano"   
+         },
+         { "first" : "Susan",
+           "last"  : "Smith",
+           "id"    : "124",
+           "skill" : "begginer",
+           "instrument" : "voice"
+         }
+      ],
+      "location" : { "building" : "Snow", "room" : "201" },
+      "time" : "9:00 AM"
+    },
+    { "type" : "duet",
+      "students" :
+      [
+         { "first" : "John",
+           "last"  : "Doe",
+           "id"    : "123",
+           "skill" : "begginer",
+           "instrument" : "piano"   
+         },
+         { "first" : "Susan",
+           "last"  : "Smith",
+           "id"    : "124",
+           "skill" : "begginer",
+           "instrument" : "voice"
+         }
+      ],
+      "location" : { "building" : "Snow", "room" : "201" },
+      "time" : "9:00 AM"
+    }

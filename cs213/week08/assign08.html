@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width">
+   <title>Assignment 08</title>
+   <link href="week08Style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+   <script src="week08Script.js"></script>
+
+   <div id="site">
+       <h1>Essential For Christians</h1>
+       <table id="itens">
+           <tr>
+               <th>Book of Mormon</th>
+               <th>Holy Bible</th>
+               <th>Doctrine and Convenant</th>
+               <th>Hymn</th>
+           </tr>
+
+           <tr>
+               <td><img src="mormon.jfif" id="product"/></td>
+               <td><img src="bible.jfif" id="product" /></td>
+               <td><img src="doctrine.jpg" id="product" /></td>
+               <td><img src="hymns.jpg" id="product" /></td>
+           </tr>
+
+           <tr>
+               <td> <p class="price">Buy for $15.00</p> </td>
+               <td> <p class="price">Buy for $7.00</p> </td>
+               <td> <p class="price">Buy for $25.00</p> </td>
+               <td> <p class="price">Buy for $5.00</p> </td>
+           </tr>
+
+           <tr>
+               <td><input type="checkbox" class="item" value="15"/></td>
+               <td><input type="checkbox" class="item" value="7"/></td>
+               <td><input type="checkbox" class="item" value="25"/></td>
+               <td><input type="checkbox" class="item" value="5"/></td>
+           </tr>
+       </table>
+
+       <form id="Buy">
+          <input type="button" id="button" value="BUY" onclick="goToForm()" />
+       </form>
+
+       <div class="hide" id="form">
+           <form id="myForm">
+               <p>First Name: <input type="text" id="firstName"
+                  onblur = "checkIfEmpty('firstName', false)"/> </p>
+
+               <p>Last Name: <input type="text" id="lastName"
+                  onblur = "checkIfEmpty('lastName', false)"/> </p>
+
+               <p>Address:</p>
+               <p>Street: <input type="text" id="street" 
+                  onblur = "checkIfEmpty('street', false)"/> </p>
+
+               <p>City: <input type="text" id="city"
+                  onblur = "checkIfEmpty('city', false)"/> </p>
+
+               <p>State: <input type="text" id="state"
+                  onblur = "checkIfEmpty('state', false)"/> </p>
+
+               <p>ZIP: <input type="text" id="zip"
+                  onblur = "checkIfEmpty('zip', false)"/> </p>
+
+               <p>Phone: <input type="text" id="phone"
+                        onblur="checkPhone()"/> </p>
+               <p id="total">Total Price: </p>
+
+               <h2>Pay with Credit Card</h2>
+               <table>
+                   <tr>
+                      <th><img src="visa.jpg" id="card" /></th>
+                      <th><img src="mastercard.png" id="card" /> </th>
+                      <th><img src="american.png" id="card" /></th>
+                   </tr>
+                   <tr>
+                      <td><input type="radio" id="visa" name="card" /></td>
+                      <td><input type="radio" id="master" name="card" /></td>
+                      <td><input type="radio" id="american" name="card" /></td>
+                    </tr>
+               </table>
+               <p>Credit Card Number: <input type="text" id="credit_card"
+                  onblur="checkCardNumber()"/></p>
+               <p>Credit Card Expiration Date: <input type="text" id="exp_date"
+                  onblur="checkCardDate()" /></p>
+               <input type="button" id="button" onclick="clearForm()" value="RESET FORM" />
+              <input type="button" id="button" onclick="finishBuy()" value="VALIDATE" />
+              <input type="button" id="button" onclick="back()" value="BACK" />
+           </form>
+           <p id="result"></p>
+       </div>
+   </div>
+</body>
+</html>

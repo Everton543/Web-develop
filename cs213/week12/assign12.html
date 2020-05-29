@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Mileage Calculator</title>
+   <link href="week12Style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body onload="setFocus()">
+   <script src="week12Script.js"></script>
+   <div class="center">
+      <h1>Distance Between Major Cities</h1>
+	  <hr />
+	  <form method="get">
+	  <ul>
+	     <li>Start City:&nbsp
+         <input type="text" name="startCity" id="startCity"
+                placeholder="Chicago"/>
+	     </li>
+
+	     <li>Start State:
+		    <input type="text" name="startState" id="startState"
+                   placeholder="IL"/>
+	     </li>
+
+	     <li>End City:&nbsp&nbsp
+		    <input type="text" name="endCity" id="endCity"
+			       placeholder="Portland"/>
+	     </li>
+
+	     <li>End State:&nbsp
+		     <input type="text" name="endState" id="endState"
+			        placeholder="OR"/>
+	     </li>
+
+	     <li> <hr />
+		    <input style="text-align:center; width:90%" type="button"
+			       name="mileage" id="mileage"
+			       value="Calculate Mileage" onclick="loadXML()" />
+	     </li>
+
+	     <li id="result"></li>
+
+	  </ul>
+      </form>	
+   </div>
+</body>
+</html>

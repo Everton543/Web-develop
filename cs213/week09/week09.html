@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width">
+   <title>Assignment 09</title>
+   <link href="week09Style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+   <script src="week09Script.js"></script>
+   <div id="site">
+      <h1>Cities Population</h1>
+      <p>Click at the buttons to know the largest cities in each country</p>
+
+      <div id="city">
+         <img id="flag" src="canadaFlag.jpg" width="100" height="50" />
+         <button onclick="openFile('canada.txt')"> Canada </button>
+      </div>
+
+      <div id="city">
+         <img id="flag" src="usaFlag.png" width="100" height="50" />
+         <button onclick="openFile('usa.txt')"> United States </button>
+      </div>
+
+      <div id="city">
+         <img id="flag" src="mexicoFlag.png" width="100" height="50" />
+         <button onclick="openFile('mexico.txt')"> Mexico </button>
+      </div>
+
+      <div id="city">
+         <img id="flag" src="russiaFlag.png" width="100" height="50" />
+         <button onclick="openFile('russia.txt')"> Russia </button>
+      </div>
+
+      <div id="result"></div>
+
+      <h2>Get The Students information</h2>
+
+      <p>Write the filename(or URL) of the file to be
+           retrieved the information.</p>
+
+      <form>
+          <label for="fName">File Name:</label>
+          <input type="text" id="fName" name="fName" /> <br />
+      </form>
+      <button onclick="openJSON()">Send</button>
+      <div id="usersResult"></div>
+   </div>
+</body>
+</html>

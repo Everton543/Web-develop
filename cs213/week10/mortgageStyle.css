@@ -1,0 +1,53 @@
+#site {
+   width: 95%;
+   height: auto;
+   margin-left: 1rem;
+   margin-right: 1rem;
+   background-color: lightgray;
+}
+
+.inputError{
+   background-color: red;
+   color: white;
+}
+
+h1{
+  background-color: darkgreen;
+  color: white;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  font-size: 2.0rem;
+}
+
+h2{
+  color: green;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  font-size: 1.3rem;
+
+}
+
+p {
+   font-size: 1rem;
+   margin-left: 1rem;
+   margin-right: 1rem;
+   text-align: justify;
+}
+
+#doubt{
+   float: left;
+   width: 20px;
+   height: 20px;
+   cursor: help;
+}
+
+#result{
+   display: inline-block;
+   border: 3px solid green;
+   text-align: center;
+   color: brown;
+}
+
+button{
+   margin-left: 1rem;
+}

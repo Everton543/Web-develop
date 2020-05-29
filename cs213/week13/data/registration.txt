@@ -1,0 +1,60 @@
+{ "performance" :
+  [
+    { "type" : "none",
+      "students" :
+      [
+         { "first" : "none",
+           "last"  : "none",
+           "id"    : "none",
+           "skill" : "none",
+           "instrument" : "none"   
+         },
+         { "first" : "none",
+           "last"  : "none",
+           "id"    : "none",
+           "skill" : "none",
+           "instrument" : "none"
+         }
+      ],
+      "location" : { "building" : "none", "room" : "none" },
+      "time" : "none"
+    },
+    { "type" : "Solo",
+      "students" :
+       [
+         { "first" : "Everton",
+           "last" : "Alves",
+           "id" : "234",
+           "skill" : "Beginner",
+           "instrument" : "Piano"
+         }
+      ],
+      "location" : { "building" : "Austin", "room" : "156" },
+      "time" : "09:50 AM"
+    },
+    { "type" : "Solo",
+      "students" :
+       [
+         { "first" : "rogerio",
+           "last" : "azdfgb",
+           "id" : "134",
+           "skill" : "Beginner",
+           "instrument" : "Piano"
+         }
+      ],
+      "location" : { "building" : "Austin", "room" : "234" },
+      "time" : "11:09 AM"
+    },
+    { "type" : "Solo",
+      "students" :
+       [
+         { "first" : "Rfasdv",
+           "last" : "NIJFJD",
+           "id" : "123456",
+           "skill" : "Pre-Advanced",
+           "instrument" : "Organ"
+         }
+      ],
+      "location" : { "building" : "Austin", "room" : "1" },
+      "time" : "12:34 AM"
+    }

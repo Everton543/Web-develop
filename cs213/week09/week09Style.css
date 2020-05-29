@@ -1,0 +1,65 @@
+#site {
+    width: 95%;
+    height: auto;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    background-color: beige;
+}
+
+h1 {
+   background-color: darkgreen;
+   color: white;
+   font-size: 2.0rem;
+}
+
+h2 {
+   background-color: darkgreen;
+   color: white;
+   font-size: 2.0rem;
+}
+
+p {
+   font-size: 1.3rem;
+   margin-left: 1.2rem;
+   margin-right: 1.2rem;
+   text-align: justify;
+}
+
+h3 {
+   font-size: 2.0rem;
+}
+
+#flag {
+   height: 50px;
+   width: 100px;
+}
+
+#city {
+   margin-left: 2rem;
+   margin-bottom: 1rem;
+}
+
+li {
+   background-color: lightskyblue;
+   padding: 1rem;
+   margin-bottom: 1rem;
+   margin-right: 2rem;
+   color: brown;
+   font-size: 1.2rem;
+}
+
+label {
+   margin-left: 1.2rem;
+}
+
+button {
+   margin-left: 1.2rem;
+}
+
+#fName {
+   margin-left: 1.2rem;
+}
+
+ul {
+   list-style: none;
+}

@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width">
+   <title>Assignment 11</title>
+   <link href="week11Style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+   <script src="week11Script.js"></script>
+
+   <div id="site">
+       <h1>Essential For Christians</h1>
+       <form id="myForm" action="assign11.php" method="get">
+           <h2 id="24">Book of Mormon</h2>
+           <img id="25" src="mormon.jfif" class="product" />
+
+           <p id="26" class="itens">Price: $15.00</p>
+
+           <input type="checkbox" id="mormonName" name="item[]"
+                  value="Book of Mormon"
+                  onclick="appear('submit'); check('mormon');" />
+
+           <input type="checkbox" id="mormonValue" name="value[]"
+                  value="15" class="hide item" />
+           <hr id="27" />
+
+           <h2 id="28">Holy Bible</h2>
+           <img id="29" src="bible.jfif" class="product" />
+
+           <p id="30" class="itens">Price: $7.00</p>
+
+           <input type="checkbox" id="bibleName" name="item[]"
+                  value="Holy Bible"
+                  onclick="appear('submit'); check('bible');" />
+
+
+           <input type="checkbox" id="bibleValue" name="value[]"
+                  value="7" class="hide item" />
+           <hr id="31" />
+
+           <h2 id="32">Doctrine And Convenant</h2>
+           <img id="33" src="doctrine.jpg" class="product" />
+
+           <p id="34" class="itens">Price: $25.00</p>
+
+           <input type="checkbox" id="DCName" name="item[]"
+                  value="Doctrine and Convenant"
+                  onclick="appear('submit'); check('DC');" />
+
+
+           <input type="checkbox" id="DCValue" name="value[]" 
+                  class="hide item" value="25" />
+           <hr id="35" />
+
+           <h2 id="36">Hymn</h2>
+           <img id="37" src="hymns.jpg" class="product" />
+
+           <p id="38" class="itens">Price: $5.00</p>
+
+           <input type="checkbox" id="hymnName" name="item[]" value="Hymn"
+                  onclick="appear('submit'); check('hymn');"/>
+
+           <input type="checkbox" id="hymnValue" name="value[]" value="5"
+                  class="item hide" />
+
+           <hr id="39" />
+
+           <input type="button" class="hide" id="submit" value="BUY"
+                  onclick="appearSecondForm()" />
+           <p id="0" class="hide">You are buying the following:</p>
+           <p id="mormon" class="hide">Book of Mormon for $15.00</p>
+           <p id="bible" class="hide">Holy Bible for $7.00</p>
+           <p id="DC" class="hide">Doctrine and Convenant for $25.00</p>
+           <p id="hymn" class="hide">Hymn for $5.00</p>
+           <p id="total"></p>
+           <p class="hide" id="1">
+               First Name: <input type="text" id="firstName" name="firstName"
+                                  onblur="checkIfEmpty('firstName', false)" />
+           </p>
+
+           <p class="hide" id="2">
+               Last Name: <input type="text" id="lastName" name="lastName"
+                                 onblur="checkIfEmpty('lastName', false)" />
+           </p>
+
+           <p class="hide" id="3">Address:</p>
+           <p class="hide" id="4">
+               Street: <input type="text" id="street" name="street"
+                              onblur="checkIfEmpty('street', false)" />
+           </p>
+
+           <p class="hide" id="5">
+               City: <input type="text" id="city" name="city"
+                            onblur="checkIfEmpty('city', false)" />
+           </p>
+
+           <p class="hide" id="6">
+               State: <input type="text" id="state" name="state"
+                             onblur="checkIfEmpty('state', false)" />
+           </p>
+
+           <p class="hide" id="7">
+               ZIP: <input type="text" id="zip" name="zip"
+                           onblur="checkIfEmpty('zip', false)" />
+           </p>
+
+           <p class="hide" id="8">
+               Phone: <input type="text" id="phone" name="phone"
+                             onblur="checkPhone()" />
+           </p>
+
+           <h2 class="hide" id="9">Pay with Credit Card</h2>
+           <hr class="hide" id="10" />
+
+           <img src="visa.jpg" id="11" class="hide" />
+           <input type="radio" value="Visa" id="12" class="hide"
+                  name="card" />
+           <hr class="hide" id="13" />
+
+           <img src="mastercard.png" id="14" class="hide" />
+           <input type="radio" value="Master Card" id="15" class="hide"
+                  name="card" />
+           <hr class="hide" id="16" />
+
+           <img src="american.png" id="17" class="hide" />
+           <input type="radio" value="American Express" id="18" class="hide"
+                  name="card" />
+
+           <p class="hide" id="19">
+               Credit Card Number:
+               <input type="text" id="credit_card" name="credit_card"
+                      onblur="checkCardNumber()" />
+           </p>
+           <p class="hide" id="20">
+               Credit Card Expiration Date:
+               <input type="text" id="exp_date" onblur="checkCardDate()"
+                      name="exp_date"/>
+           </p>
+
+           <input type="button" id="21" class="hide"
+                  onclick="clearForm()" value="RESET FORM" />
+
+           <input type="button" id="22" class="hide"
+                  onclick="finishBuy()" value="VALIDATE" />
+
+           <input type="button" id="23" class="hide"
+                  onclick="back()" value="BACK" />
+
+           <input type="submit" id="submitEnd" class="hide"
+                  value="SUBMIT" />
+       </form>
+   </div>
+</body>
+</html>

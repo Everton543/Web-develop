@@ -1,0 +1,119 @@
+#site {
+   width: 95%;
+   height: auto;
+   margin-left: 1rem;
+   margin-right: 1rem;
+   background-color: lightgray;
+}
+
+.hide{
+   display: none;
+   visibility: hidden; 
+   cursor: initial;
+   height: 0px;
+   width: 0px;
+}
+
+table{
+   display: table;
+   border-collapse: separate;
+   width: 90%;
+   height: auto;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+th, td {
+    text-align: center;
+    font-size: 1rem;
+    
+}
+.itens{
+   display: inline;
+   font-size: 1.3rem;
+}
+.inputError {
+    background-color: red;
+    color: white;
+}
+
+input[type='radio']{
+   transform: scale(2);
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+input[type='checkbox']{
+   transform: scale(2);
+   display: inline;
+}
+
+img{
+   display: inline;
+   width: 8rem;
+   height: auto;
+   margin-left: 2rem;
+   margin-right: auto;
+}
+
+.price{
+   text-align: center;
+}
+
+input[type='submit'], input[type='button'] {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    width: auto;
+    height: 2rem;
+}
+
+.product{
+   display: inline;
+   margin-left: 2rem;
+   margin-right: 1rem;
+   margin-top: 1rem;
+   width: 100px;
+   height: 150px;
+}
+
+.form{
+    margin-left: 1rem;
+    margin-top: 2rem;
+}
+
+h1{
+   background-color: darkgreen;
+   color: white;
+   margin-left: 1rem;
+   margin-right: 1rem;
+   font-size: 2.0rem;
+   text-align: center;
+}
+
+h2{
+  color: green;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  font-size: 1.3rem;
+}
+
+p {
+   font-size: 1.4rem;
+   margin-left: 1rem;
+   margin-right: 1rem;
+   text-align: justify;
+}
+
+#doubt{
+   float: left;
+   width: 20px;
+   height: 20px;
+   cursor: help;
+}
+
+.button{
+   margin-left: 1rem;
+}

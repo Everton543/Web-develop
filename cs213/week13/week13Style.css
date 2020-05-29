@@ -1,0 +1,67 @@
+select{
+   display: inline;
+}
+
+h1,h2,h3{
+   color: white;
+   font-size: 1.7rem;
+}
+
+.inputError {
+   background-color: red;
+   color: white;
+}
+
+h1 {
+   text-align: center;
+   font-size: 2rem;
+}
+p{
+   display: inline;
+   color: white;
+   font-size: 1.4rem;
+}
+
+table {
+   display: table;
+   border-collapse: separate;
+   width: 100%;
+   height: auto;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+th, td {
+   text-align: center;
+   font-size: 1rem;
+   border-bottom-style: solid;
+}
+
+#schedule{
+   width: auto;
+   height: 80%;
+   background-color: crimson;
+}
+
+.middle{
+   text-align: center;
+}
+
+body{
+   background-color: black;
+}
+#site{
+   width: auto;
+   height: 90%;
+   background-color: darkblue;
+   padding: 2rem;
+}
+
+.hide{
+   display:none;
+}
+
+input[type='number'], input[type='text']
+{
+   width: 4rem;
+}
